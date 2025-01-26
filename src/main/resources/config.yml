@@ -1,0 +1,38 @@
+
+#
+# Внимание! В папке schematics/ название схематики и расширениие
+# должно использоваться: tree.schem
+#
+# Скачать пример схематики: https://github.com/Tahoma34/SaplingMagic/tree/main
+#
+
+settings:
+  treeSpawnTimer: 30
+  dropInterval: 15
+  dropRadius: 10
+  dropAmount: 5
+
+sapling:
+  material: "OAK_SAPLING"
+  name: "&dМагический саженец"
+  lore:
+    - "&7Этот саженец пропитан магией..."
+    - "&7Сила леса дремлет в нём."
+
+messages:
+  # Включает или отключает рассылку сообщения в чат
+  enableChat: true
+  # Включает или отключает рассылку сообщения в хотбар
+  enableHotbar: true
+  notPlayer: "&cТолько игрок может использовать эту команду!"
+  usage: "&eИспользование: /msapling <give|additem|items> ..."
+  specifyNickname: "&cУкажите ник: /msapling give  "
+  playerNotFound: "&cИгрок не найден!"
+  itemAdded: "&aПредмет добавлен в items.yml с шансом %chance%"
+  noItemInHand: "&cУ вас в руке нет предмета!"
+  unknownSubcommand: "&eНеизвестная подкоманда. Используйте /msapling help."
+  itemRemoved: "&aПредмет успешно удалён!"
+  chanceRange: "&cШанс должен быть от 1 до 100!"
+  magicSaplingPlaced: "&aМагический саженец установлен. Таймер: %time% секунд."
+  guiItemRemoved: "&aПредмет успешно удалён из списка!"
+  saplingPlaced: "&fИгрок &e%player%&f посадил волшебный саженец на координатах &eX:%x% Y:%y% Z:%z%."

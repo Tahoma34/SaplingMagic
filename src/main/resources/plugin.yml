@@ -1,0 +1,13 @@
+name: SaplingMagic
+version: 1.1
+main: org.tahoma.sapling.SaplingMagic
+api-version: '1.16'
+Author: Tahoma34
+depend:
+  - WorldEdit
+
+commands:
+  msapling:
+    description: "Главная команда плагина SaplingMagic"
+    usage: "/msapling <subcommand>"
+    permission: "saplingmagic.use"
