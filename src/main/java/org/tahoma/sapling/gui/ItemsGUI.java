@@ -1,4 +1,3 @@
-// ItemsGUI.java
 package org.tahoma.sapling.gui;
 
 import org.bukkit.Bukkit;
