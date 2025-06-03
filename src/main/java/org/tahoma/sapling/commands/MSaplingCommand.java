@@ -134,15 +134,12 @@ public class MSaplingCommand implements CommandExecutor, TabCompleter {
                                                 @NotNull String alias,
                                                 @NotNull String[] args) {
 
-        // Если нет прав на использование команды, ничего не предлагаем
         if (!sender.hasPermission("msapling.use")) {
             return Collections.emptyList();
         }
 
-        // Если набирается первая часть команды (/msapling ...)
         if (args.length == 1) {
             List<String> subCommands = new ArrayList<>();
-            // Добавляем только те подкоманды, для которых у игрока есть разрешения
             if (sender.hasPermission("msapling.give")) {
                 subCommands.add("give");
             }
